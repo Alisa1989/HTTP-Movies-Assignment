@@ -48,7 +48,7 @@ body {
   border: 1px solid grey;
   padding: 5px;
 }
-.save-wrapper {
+.movie-wrapper {
   position: relative;
   width: 75%;
   margin: 1rem auto;
@@ -61,10 +61,35 @@ body {
   padding: 5px 10px;
   background-color: lightseagreen;
 }
+.update-button {
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+}
+.delete-button {
+  position: absolute;
+  top: 25px;
+  right: 168px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+}
 .save-button:hover {
   background-color: green;
   color: white;
 }
+.update-button:hover {
+  background-color: green;
+  color: white;
+}
+.delete-button:hover {
+  background-color: green;
+  color: white;
+}
+
 
 .home-button {
   padding: 5px 10px;
@@ -73,5 +98,11 @@ body {
 
 .movie-warning {
   color: red;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
