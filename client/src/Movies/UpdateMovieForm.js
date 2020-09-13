@@ -37,11 +37,9 @@ const UpdateMovieForm = (props) => {
         axios
             .put(`http://localhost:5000/api/movies/${id}`, item)
             .then(res => {
-                console.log(res.data)                // looks like it's just the one
-                props.setMovieList(res.data);
-                //props.setMovieList(props.movieList.filter(item => item.id != id));
-                //props.setMovieList(...MovieList, res.data);
-                push(`/movies/${id}`);
+                //console.log(res.data)
+                //console.log(props.movieList)
+                push(`/`);
             })
             .catch(err => console.log("put error UMF:",err))
         console.log("movie updated");
